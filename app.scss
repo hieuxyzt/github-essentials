@@ -1,0 +1,48 @@
+@import url(https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap);
+
+
+$shadowBlur: 10px;
+$shadowColor: rgba(0, 0, 0, .5);
+
+
+body{
+  width: 98vw;
+  height: 98vh;
+  background: linear-gradient(120deg, #d48a7d, #8fc5e9);
+  
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  perspective: 1000px;
+}
+
+@function myShadow($color, $offset) {
+  $val: -3px 0px $color;
+  @for $i from 5 to 30 {
+      $color2: lighten($color, $i*0.8);
+      $val: #{$val}, #{($i*$offset)/10}vw #{$i*.8}vh #{$i*.8}px #{$color2};
+  }
+  @return $val;
+}
+
+@mixin animation-mixin($name, $color, $offset1, $offset2) {
+  @keyframes #{$name} {
+    0% {text-shadow: myShadow($color, $offset1);}
+    100% {text-shadow: myShadow($color, $offset2);}
+  }
+}
+
+.myText{
+  font-family: 'Bebas Neue', cursive;
+  font-size: 10vw;
+  font-weight: 900;
+  color: rgba(200, 200, 200, 1);
+  letter-spacing: .3em;
+  text-transform: uppercase;
+  
+  @include animation-mixin(anim, #202020, -3, 2);
+  animation: anim 10s alternate ease infinite;
+}
+
+
