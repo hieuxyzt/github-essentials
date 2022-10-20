@@ -1,0 +1,28 @@
+@import url(https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap);
+body {
+  width: 98vw;
+  height: 98vh;
+  background: linear-gradient(120deg, #d48a7d, #8fc5e9);
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  perspective: 1000px;
+}
+.myText {
+  font-family: 'Bebas Neue', cursive;
+  font-size: 10vw;
+  font-weight: 900;
+  color: #c8c8c8;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  animation: anim 10s alternate ease infinite;
+}
+@keyframes anim {
+  0% {
+    text-shadow: -3px 0px #202020, -1.5vw 4vh 4px #2a2a2a, -1.8vw 4.8vh 4.8px #2c2c2c, -2.1vw 5.6vh 5.6px #2e2e2e, -2.4vw 6.4vh 6.4px #303030, -2.7vw 7.2vh 7.2px #323232, -3vw 8vh 8px #343434, -3.3vw 8.8vh 8.8px #363636, -3.6vw 9.6vh 9.6px #383838, -3.9vw 10.4vh 10.4px #3b3b3b, -4.2vw 11.2vh 11.2px #3d3d3d, -4.5vw 12vh 12px #3f3f3f, -4.8vw 12.8vh 12.8px #414141, -5.1vw 13.6vh 13.6px #434343, -5.4vw 14.4vh 14.4px #454545, -5.7vw 15.2vh 15.2px #474747, -6vw 16vh 16px #494949, -6.3vw 16.8vh 16.8px #4b4b4b, -6.6vw 17.6vh 17.6px #4d4d4d, -6.9vw 18.4vh 18.4px #4f4f4f, -7.2vw 19.2vh 19.2px #515151, -7.5vw 20vh 20px #535353, -7.8vw 20.8vh 20.8px #555, -8.1vw 21.6vh 21.6px #575757, -8.4vw 22.4vh 22.4px #595959, -8.7vw 23.2vh 23.2px #5b5b5b;
+  }
+  100% {
+    text-shadow: -3px 0px #202020, 1vw 4vh 4px #2a2a2a, 1.2vw 4.8vh 4.8px #2c2c2c, 1.4vw 5.6vh 5.6px #2e2e2e, 1.6vw 6.4vh 6.4px #303030, 1.8vw 7.2vh 7.2px #323232, 2vw 8vh 8px #343434, 2.2vw 8.8vh 8.8px #363636, 2.4vw 9.6vh 9.6px #383838, 2.6vw 10.4vh 10.4px #3b3b3b, 2.8vw 11.2vh 11.2px #3d3d3d, 3vw 12vh 12px #3f3f3f, 3.2vw 12.8vh 12.8px #414141, 3.4vw 13.6vh 13.6px #434343, 3.6vw 14.4vh 14.4px #454545, 3.8vw 15.2vh 15.2px #474747, 4vw 16vh 16px #494949, 4.2vw 16.8vh 16.8px #4b4b4b, 4.4vw 17.6vh 17.6px #4d4d4d, 4.6vw 18.4vh 18.4px #4f4f4f, 4.8vw 19.2vh 19.2px #515151, 5vw 20vh 20px #535353, 5.2vw 20.8vh 20.8px #555, 5.4vw 21.6vh 21.6px #575757, 5.6vw 22.4vh 22.4px #595959, 5.8vw 23.2vh 23.2px #5b5b5b;
+  }
+}
